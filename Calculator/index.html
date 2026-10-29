@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="css/styles.css">
+        <script src="js/script.js" defer></script>
+
+    </head>
+
+    <body>
+        <main id="calculator">
+            <section id="display">
+                <input type="text" placeholder="0" id="calculatorInput" readonly>
+            </section>
+            <section id="buttons">
+                <button id="btn00Add" onclick="appendToDisplayOperator('+')" class="CalcBtn">+</button>
+                <button id="btn01" onclick="appendToDisplay('7')" class="nBtn">7</button>
+                <button id="btn02" onclick="appendToDisplay('8')" class="nBtn">8</button>
+                <button id="btn03" onclick="appendToDisplay('9')" class="nBtn">9</button>
+                <button id="btn04Subtract" onclick="appendToDisplayOperator('-')" class="CalcBtn">-</button>
+                <button id="btn05" onclick="appendToDisplay('4')" class="nBtn">4</button>
+                <button id="btn06" onclick="appendToDisplay('5')" class="nBtn">5</button>
+                <button id="btn07" onclick="appendToDisplay('6')" class="nBtn">6</button>
+                <button id="btn08Multiply" onclick="appendToDisplayOperator('*')" class="CalcBtn">*</button>
+                <button id="btn09" onclick="appendToDisplay('1')" class="nBtn">1</button>
+                <button id="btn10" onclick="appendToDisplay('2')" class="nBtn">2</button>
+                <button id="btn11" onclick="appendToDisplay('3')" class="nBtn">3</button>
+                <button id="btn12Divide" onclick="appendToDisplayOperator('/')" class="CalcBtn">/</button>
+                <button id="btn13" onclick="appendToDisplay('0')" class="nBtn">0</button>
+                <button id="btn14" onclick="appendToDisplay('.')" class="nBtn">.</button>
+                <button id="btn15" onclick="calculate()" class="nBtn">=</button>
+                <button id="btn16" onclick="clearDisplay()" class="CalcBtn">C</button>
+                <button id="btn17" onclick="appendToDisplayOperator('^') " class="CalcBtn">^</button>
+                <button id="btn18" onclick="negativeNumber()" class="CalcBtn">(-)</button>
+                <button id="btn20" onclick="clearOne()" class="CalcBtn">DEL</button>
+                
+
+
+            </section>
+        </main>
+    </body>
+
+</html>
